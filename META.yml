@@ -1,0 +1,34 @@
+---
+abstract: 'adds an AUTHORITY method to UNIVERSAL'
+author:
+  - 'Toby Inkster <tobyink@cpan.org>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+  Test::Exception: 0
+  Test::More: 0.61
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 1.02'
+keywords: []
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+module_name: UNIVERSAL::AUTHORITY
+name: UNIVERSAL-AUTHORITY
+no_index:
+  directory:
+    - inc
+    - t
+    - xt
+requires:
+  Carp: 0
+  Scalar::Util: 0
+  UNIVERSAL: 0
+  perl: 5.005
+resources:
+  bugtracker: http://rt.cpan.org/Dist/Display.html?Queue=UNIVERSAL-AUTHORITY
+  homepage: https://metacpan.org/release/UNIVERSAL-AUTHORITY
+  license: http://dev.perl.org/licenses/
+version: 0.001
