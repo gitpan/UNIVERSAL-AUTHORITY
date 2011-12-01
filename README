@@ -12,6 +12,8 @@ SYNOPSIS
      Moose->AUTHORITY('cpan:STEVAN'); # dies if doesn't match
 
 DESCRIPTION
+    This module is deprecated: use UNIVERSAL::AUTHORITY::Lexical instead.
+
     This module adds an "AUTHORITY" function to the "UNIVERSAL" package,
     which works along the same lines as the "VERSION" function. Because it
     is defined in "UNIVERSAL", it becomes instantly available as a method
@@ -36,24 +38,26 @@ DESCRIPTION
     expression, a code reference to use as a callback, or an array reference
     that will be grepped.)
 
-  Utility Function
-    "UNIVERSAL::AUTHORITY::reasonably_smart_match($a, $b)"
-        UNIVERSAL::AUTHORITY exposes its smart match implementation in case
-        classes wish to reuse it for their own custom "AUTHORITY" methods.
-        (There are various interesting use cases for custom "AUTHORITY"
-        methods, just as there are for custom "can" and "isa" methods.)
-
-        The $a parameter is assumed to be a scalar.
-
 BUGS
     Please report any bugs to
     <http://rt.cpan.org/Dist/Display.html?Queue=UNIVERSAL-AUTHORITY>.
 
 SEE ALSO
-    authority, authority::shared, <http://feather.perl6.nl/syn/S11.html>,
-    <http://www.perlmonks.org/?node_id=694377>.
+    *   Object::AUTHORITY - an AUTHORITY method for your class
 
-    UNIVERSAL, UNIVERSAL::which, UNIVERSAL::dump, UNIVERSAL::DOES, &c.
+    *   authority::shared - a more sophisticated AUTHORITY method for your
+        class
+
+    *   *UNIVERSAL::AUTHORITY* (this module) - an AUTHORITY method for every
+        class (deprecated)
+
+    *   UNIVERSAL::AUTHORITY::Lexical - an AUTHORITY method for every class,
+        within a lexical scope
+
+    *   authority - load modules only if they have a particular authority
+
+    Background reading: <http://feather.perl6.nl/syn/S11.html>,
+    <http://www.perlmonks.org/?node_id=694377>.
 
 AUTHOR
     Toby Inkster <tobyink@cpan.org>.

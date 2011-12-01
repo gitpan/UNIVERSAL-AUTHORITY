@@ -26,9 +26,9 @@ requires:
   Carp: 0
   Scalar::Util: 0
   UNIVERSAL: 0
-  perl: 5.005
+  perl: 5.6.0
 resources:
   bugtracker: http://rt.cpan.org/Dist/Display.html?Queue=UNIVERSAL-AUTHORITY
   homepage: https://metacpan.org/release/UNIVERSAL-AUTHORITY
   license: http://dev.perl.org/licenses/
-version: 0.002
+version: 0.003
