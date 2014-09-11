@@ -14,10 +14,10 @@ SYNOPSIS
 DESCRIPTION
     This module is deprecated: use UNIVERSAL::AUTHORITY::Lexical instead.
 
-    This module adds an "AUTHORITY" function to the "UNIVERSAL" package,
-    which works along the same lines as the "VERSION" function. Because it
-    is defined in "UNIVERSAL", it becomes instantly available as a method
-    for any blessed objects, and as a class method for any package.
+    This module adds an `AUTHORITY` function to the `UNIVERSAL` package, which
+    works along the same lines as the `VERSION` function. Because it is
+    defined in `UNIVERSAL`, it becomes instantly available as a method for any
+    blessed objects, and as a class method for any package.
 
     The authority of a package can be defined like this:
 
@@ -26,15 +26,15 @@ DESCRIPTION
 
     The authority should be a URI identifying the person, team, organisation
     or trained chimp responsible for the release of the package. The
-    pseudo-URI scheme "cpan:" is the most commonly used identifier.
+    pseudo-URI scheme `cpan:` is the most commonly used identifier.
 
-  "UNIVERSAL::AUTHORITY"
+  `UNIVERSAL::AUTHORITY`
     Called with no parameters returns the authority of a CPAN release.
 
-  "UNIVERSAL::AUTHORITY($test)"
+  `UNIVERSAL::AUTHORITY($test)`
     If passed a test, will croak if the test fails. The authority is tested
     against the test using something approximating Perl 5.10's smart match
-    operator. (Briefly, you can pass a string for "eq" comparison, a regular
+    operator. (Briefly, you can pass a string for `eq` comparison, a regular
     expression, a code reference to use as a callback, or an array reference
     that will be grepped.)
 
@@ -65,8 +65,8 @@ AUTHOR
 COPYRIGHT AND LICENCE
     This software is copyright (c) 2011 by Toby Inkster.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+    This is free software; you can redistribute it and/or modify it under the
+    same terms as the Perl 5 programming language system itself.
 
 DISCLAIMER OF WARRANTIES
     THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
